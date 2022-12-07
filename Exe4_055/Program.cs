@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Exception
+namespace Exe_4
 {
     class Stack
     {
@@ -45,7 +45,7 @@ namespace Exception
             else
                 return (false);
         }
-        public void printStack()
+        public void display()
         {
             if (empty())
             {
@@ -96,7 +96,7 @@ namespace Exception
                         s.pop();
                         break;
                     case '3':
-                        s.printStack();
+                        s.display();
                         break;
                     case '4':
                         return;
