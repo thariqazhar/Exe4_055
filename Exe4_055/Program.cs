@@ -98,7 +98,11 @@ namespace Exception
                     case '3':
                         s.printStack();
                         break;
-                    
+                    case '4':
+                        return;
+                    default:
+                        Console.WriteLine("\nInvalid Choice");
+                        break;
                 }
             }
         }
