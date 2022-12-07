@@ -4,7 +4,7 @@ namespace Exception
 {
     class Stack
     {
-        int[] azhar = new int[3];
+        int[] azhar = new int[73];
         private int top;
         private int max;
 
@@ -58,6 +58,27 @@ namespace Exception
                 {
                     Console.WriteLine("Item[" + (i + 1) + "]: " + azhar[i]);
                 }
+            }
+        }
+    }
+
+    class Program
+    {
+        static void Main()
+        {
+            Stack s = new Stack(73);
+
+            while (true)
+            {
+                Console.WriteLine();
+                Console.WriteLine("\n***Stack Menu***\n");
+                Console.WriteLine("1. Push.");
+                Console.WriteLine("2. Pop");
+                Console.WriteLine("3. Display");
+                Console.WriteLine("4. Exit");
+                Console.WriteLine("\nEnter your choice: ");
+                string sInput = Console.ReadLine();
+                char ch = Convert.ToChar(sInput == "" ? "0" : sInput);
             }
         }
     }
