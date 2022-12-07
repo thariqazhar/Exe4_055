@@ -45,5 +45,20 @@ namespace Exception
             else
                 return (false);
         }
+        public void printStack()
+        {
+            if (empty())
+            {
+                Console.WriteLine("Stack is Empty");
+                return;
+            }
+            else
+            {
+                for (int i = 0; i <= top; i++)
+                {
+                    Console.WriteLine("Item[" + (i + 1) + "]: " + azhar[i]);
+                }
+            }
+        }
     }
 }
