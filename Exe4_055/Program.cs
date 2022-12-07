@@ -26,5 +26,18 @@ namespace Exception
                 azhar[++top] = item;
             }
         }
+        public int pop()
+        {
+            if (top == -1)
+            {
+                return -1;
+            }
+            else
+            {
+                Console.WriteLine("Popped element is: " + azhar[top]);
+                return azhar[top--];
+            }
+        }
+
     }
 }
