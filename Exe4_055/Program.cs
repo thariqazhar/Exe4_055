@@ -95,6 +95,9 @@ namespace Exception
                         }
                         s.pop();
                         break;
+                    case '3':
+                        s.printStack();
+                        break;
                     
                 }
             }
